@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/tv_mm_welcome1"
+        android:id="@+id/textView"
+        android:padding="20dp"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_weight="3" />
+
+
+    <Button
+        android:text="@string/but_create"
+        android:textSize="30dp"
+        android:id="@+id/but_encrypt"
+        android:onClick="startEncryptionActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+    <Button
+        android:text="@string/but_read"
+        android:textSize="30dp"
+        android:id="@+id/but_read"
+        android:onClick="launchQRScanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+</LinearLayout>

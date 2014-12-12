@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="csbslovenia.com.paper_vault.startReadingActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:text=". . ."
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding"
+        android:textSize="@dimen/butTextSize"
+        android:layout_weight="2.2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2">
+
+    <EditText
+        android:layout_width="275dp"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/etPassword"
+        android:hint="@string/hint_EnterPassword"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="@string/but_decrypt"
+        android:id="@+id/but_decrypt"
+        android:onClick="decryptAndDisplay"/>
+    </LinearLayout>
+
+    <TextView
+        android:hint="wait for it"
+        android:id="@+id/tv_decrypted"
+        android:padding="@dimen/padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:maxLines="20"
+        android:layout_gravity="center"
+        android:background="#242424"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/but_edit"
+        android:id="@+id/but_edit"
+        android:onClick="editMessage"
+        android:enabled="false"
+        android:layout_weight="2"/>
+
+</LinearLayout>

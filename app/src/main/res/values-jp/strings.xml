@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu items -->
+    <string name="app_name">PaperVault</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">設定</string>
+    <string name="print">刷る</string>
+    <string name="save">セーブ</string>セーブ
+    <string name="share">催合え</string>
+
+    <!-- Main menu -->
+    <string name="tv_mm_welcome1">PaperVaultへようこそ.</string>
+    <string name="tv_mm_introduction">This app is designed to encrypt your sensitive message such as e-mail password, social security number, sim-card PIN numbers or anything else you want. The program will encrypt the message with the password of your choice. Afterwards, it will create a 2D barcode (QR code), which you can then print and put somewhere safe. The data on this QR image is encrypted, which means that next time you will want to view the contents of the message, you will have to enter the password. If you forget the password, the information is lost. What you have on your printed paper is essentially a digital version of a safe - on your paper. Free of electronics. For extra security, hide this paper in a safe place, or put it in a safe. The way this app encrypts this file is public, which means that your data will never be lost, even if this app no longer exists. Encryption algorithms in this app are standardised, which means that any IT Security engineer will be able to decode your message - as long you give him your password.</string>
+    <string name="but_create">暗号化する</string>
+    <string name="but_read">復号化する</string>
+    <string name="title_activity_start_encryption">startEncryptionActivity</string>
+
+    <string name="lang">English</string>
+
+    <!-- startEncryptionActivity -->
+    <string name="tv_enterUnencryptedText">暗号化するためにテキストを入力してください！</string>
+    <string name="title_activity_create_and_show_png">createAndShowPNG</string>
+    <string name="title_activity_generate_qrcode">GenerateQRCodeActivity</string>
+    <string name="title_activity_start_reading">startReadingActivity</string>
+    <string name="hint_nameDocument">ドキュメントに名前を付けます。</string>
+    <string name="hint_textToBeEncrypted">秘密のメッセージを入力してください</string>
+    <string name="hint_enterPassword">スマートパスワードを入力してください</string>
+    <string name="but_continue">  続ける  </string>
+
+    <!-- startReadinActivity -->
+    <string name="but_decrypt">復号化する</string>
+    <string name="title_activity_school">School</string>
+    <string name="but_edit">編集する</string>
+    <string name="hint_EnterPassword">パスワードを入力する</string>
+
+    <!-- ZXing messages -->
+    <string name="scanCiphertext">PaperVaultのQRコードを見つけよう！\n\n</string>
+    <string name="invalidQRcodeTitle">無効なPaperVault QRコード。</string>
+    <string name="invalidQRcode">無効なPaperVault QRコード。</string>
+    <string name="incorrectPassword">"間違ったパスワードを入力します"</string>
+
+    <!-- Toasts -->
+    <string name="et_enterTitle">文書に名前を付けてください。</string>
+
+    <!-- School -->
+    <string name="whatIsASafePassword"><b>悪いパスワード:</b>\n
+        \t\t<i>Nick, Timmy, BMW, password,TomCat, Dexter, chair</i> \n\n
+        \t\t\t\t Words seen above are cataloged in an English Dictionary. There are about 200 thousand words in an English dictionary.
+                 It would take an average home computer only 11 hours to try them all and find out your password. Even worse, the passwords are so short, that a brute force attack
+                 is also easily feasible. (Brute force attack tries every combination. aaa, aab, aac, aad..
+        \n\n <b>少し良く。</b>\n
+        \t\t<i>maryhadalittlelamb</i>\n\n
+        \t\t\t\t A sentence is a combination of words. A dictionary attack would last much longer thus costing the attacker more money to find out your password.
+        However, your phrase is still very common and a smart dictionary attack would still need less than a week on an average home computer.
+        \n\n <b>オーケーパスワード</b>\n
+        \t\t\t\t<i>maryhadalittlesewagepump</i>\n\n
+        \t\t\t\t The fact that Mary had a little sewage pump is very odd. The oddity of it makes this password more resistant to a dictionary attack.
+        You made this phrase up, so it is very unlikely to be in an Attackers dictionary. This is good enough to repel an average attacker, because he will
+        rather try finding an easier target.
+        \n\n <b>グッドパスワード。</b>\n
+        \t\t<i>MarYHaDALittlESewagEPumP</i>\n\n
+        \t\t\t\t The phrase is exactly the same, however you have found a new rule to write it down. Every first and last letter of the word in the phrase are capitalized.
+        Now the dictionary attack is even harder, because it would have to go through every combination of capitalized letters to find it.
+        \n\n <b>私が使用するパスワードのタイプ。</b> \n
+        \t\t <i>M@ryH@0@1itt13S3w@g3Pump</i> \n\n
+        \t\t\t\t It is still the same phrase as above, but I have made my own rule for it by adding extra characters. I replaced a with @, l with ones, d with 0 and e with threes.
+        The phrase is still easy to remember, however by applying the different-character rule I have made my password even more resistant to brute-force attack and totally resistant
+        to dictionary attack. (A dictionary attack would be too big if it involved all of the combinations of switched letters, defeating its purpose)
+        \n\n <b>認識できないパスワード</b>\n
+        \t\t <i>mlaarmybheaadtaelnibtztwloellfamb</i> \n\n
+
+        \t\t\t\t It looks total nonsence, however there is logic behind it. This password is made up of two passwords: <i>maryhadalittlelamb</i> nad <i>lambeatenbywolf</i>.
+        First I wrote down <i>maryhadalittlelamb</i> then I went back to the beginning and started writing <i>lambeatenbywolf</i>. However, I pressed a key arrow --> for every letter.
+        If you only read every second letter of this password it makes sence. The good thing about this password is, that you cant even remember it yourself. Even if I put a gun
+        to you and order you to tell me your password, you would have  hard time doing it without a pen and a paper. (Mind that your rule can be more complicated than just <i>every second</i>         letter.) The bad thing about this password is, that it can be tricky to enter on a smartphone if it does not have the --> key fastly accesible.
+        \n\n <b>パスワードでありません</b> \n
+        \t\t <i>UcgNj22YCxCkzUQ#4G8fzFgw2m^JD!5w</i> \n\n
+        \t\t\t\t What you see is a totally random set of characters. If you have a photographic memory, it is the best password you can have. If you don\'t, avoid
+        using something like this. It will end up being written on a sticky note, or saved somewhere in your e-mail, thus defeating all security. \n
+        A random set of characters is technically a key. A key is used to encrypt your data - also in this app! Based on your password, this app actually generates a random
+        key that looks kinda like this one, and then encrypts your message with it. It purposely takes about half a second to make this key from your password - as to slow down the attacker.
+        You can afford to wait half a second to open your file, an attacker can not afford waiting half a second for every tester password. Unless your password is <i>"Jeff"</i>.</string>
+    <string name="test">Hello Moto! </string>
+    <string name="title_activity_test">test</string>
+
+    <!-- Bitmap -->
+    <string name="bitmap_bottom">
+        This document was created with the Paper-Vault app. Paper-Vault is an Android
+        application that enables you to encrypt a short message (up to 2000 latin characters)
+        and store it on a computer-readable 2D code. To read and decode this message
+        you will need a Paper-Vault app and the creator\'s password.
+        ***************
+        QR represents 4 pieces of information delimited with a character \"]\".
+        From the left: data0:Salt; data1:IV; data2:chiper-text; data4:Byte64 encoded
+        unencrypted title.
+        ***************
+        Encryption mechanism: AES/CBC/PKCS5Padding; Key Derivation: PBKDF2WithHmacSHA1,
+        Iteration count: 65535; Salt length: 8; Key length: 256; Raw data encoding: UTF-8.
+        ****Created by: フロ-リアン プラプロトゥニック
+    </string>
+    <string name="notes">注釈: </string>
+    <string name="pencil_lines">-----------------------------------------------------------------------------------</string>
+
+</resources>

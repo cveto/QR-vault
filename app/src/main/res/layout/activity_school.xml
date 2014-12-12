@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="csbslovenia.com.paper_vault.School"
+    android:orientation="vertical">
+
+
+        <TextView
+            android:text="@string/whatIsASafePassword"
+            android:id="@+id/tv_whatIsASafePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:padding="25dp"
+            android:width="480dp"
+            android:scrollbars="vertical"
+            android:maxLines="20"/>
+
+
+
+</RelativeLayout>

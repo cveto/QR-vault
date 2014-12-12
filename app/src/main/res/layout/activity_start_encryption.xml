@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="csbslovenia.com.paper_vault.startEncryptionActivity">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/hint_nameDocument"
+        android:layout_weight="2.2"
+        android:paddingLeft="@dimen/padding"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding"
+        android:hint="@string/hint_textToBeEncrypted"
+        android:id="@+id/et_textToBeEncrypted"
+        android:layout_weight="1"
+        android:scrollbars="vertical"
+        android:maxLines="20"
+        android:gravity="top"
+        android:inputType="textMultiLine"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/padding"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+
+        <EditText
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/hint_enterPassword"
+            android:id="@+id/et_password"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:src="@drawable/questionmark50"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:onClick="ShowSchool" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/but_continue"
+        android:id="@+id/but_createSafe"
+        android:onClick="encryptAndDisplay"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:textSize="@dimen/butTextSize"/>
+
+
+</LinearLayout>

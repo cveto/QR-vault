@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Info on Hower. (What is a good password?) -->
+    <style name="AppThemeHover" parent="android:Theme.Holo.Light.Dialog.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>
